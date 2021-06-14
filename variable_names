@@ -20,4 +20,32 @@ letter - letter_in_entered_string (letterInEnteredString)
 //в начальном варианте не понятно какая буква хранится
 //и откуда она берется
 
-map1 - start
+attackCoordsN - attack_coords_height (attackCoordsHeight)
+//массив в котором хранятся координаты по высоте
+//N поменял на height, так как это более понятно
+//и не вызывает заблуждений
+
+attackCoordsM - attack_coords_widht (attackCoordsWidth)
+//массив в котром хранятся координаты по ширине
+//M поменял на width, так как это более понятно
+//и не вызывает заблуждений
+
+sortedPrices - left_sorted_prices_list (leftSortedPricesList)
+//переменная для хранения развернутого сортированного массива цен
+//reversed добавил, чтоб сразу из названия было понятно
+//что массив перевернутый
+
+map1 - start_map_coords_list (startMapCoordsList)
+//переменная для хранения стартовых координат карты
+
+map2 - compare_map_coords_list (compareMapCoordsList)
+//переменная для хранения координат карты для сравнения
+
+allVotes - sum_of_all_votes (sumOfAllVotes)
+//переменная для хранения суммы всех голосов
+
+votesPercents - votes_in_percents_list (votesInPercentsList)
+//массив для хранения процентов по каждому голосованию
+
+maxVotesPercents - maximum_percentage_of_votes (maximumPercentageOfVotes)
+//переменная для хранения максимального процент по голосованию
