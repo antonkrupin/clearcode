@@ -29,6 +29,34 @@ yearsCounter - treeOfLifeTotalYears (tree_of_life_total_years)
 2.
 
 3.
+class Vehicle(object):
+ 
+    def __init__(self, color, doors, tires):
+        self.color = color
+        self.doors = doors
+        self.tires = tires
+//класс для описания автомобиля
+//исходя из контекста имена переменных
+//понятны и логичны
+
+class Rectangle:
+  
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+        
+//класс для описания прямоугольника
+//исходя из контекста имена переменных более понятны
+
+class Person:
+    
+    def __init__(self, firstName, lastName, residenceAddress)
+        self.firstName = firstName
+        self.lastName = lastName
+        self.residenceAddress = residenceAddress
+        
+//класс для описания пользователя
+//исходя из контекста имена переменных более понятны
 
 4.
 width - widthOfTheBiggestCar
