@@ -1,4 +1,4 @@
-1.
+6.1
 diamonds - sumOfSquirellDiamonds (sum_of_squirell_diamonds)
 //более понятно что хранится в переменной
 
@@ -26,7 +26,7 @@ yearsCounter - treeOfLifeTotalYears (tree_of_life_total_years)
 //прямо указал что это общее количество лет для
 //дерева жизни
 
-2.
+6.2
 mensahe - saveUserInput
 //переменная для сохранения ввода пользователя
 
@@ -40,7 +40,7 @@ xml - xmlFileForProcessing
 //переменная в которой хранится ссылка на 
 //файл, который будет в будущем обрабатываться
 
-3.
+6.3
 class Vehicle(object):
  
     def __init__(self, color, doors, tires):
@@ -70,7 +70,7 @@ class Person:
 //класс для описания пользователя
 //исходя из контекста имена переменных более понятны
 
-4.
+6.4
 width - widthOfTheBiggestCar
 //переменная была из 5 символов
 //сейчас ровно 20 (предельная граница)
