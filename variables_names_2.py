@@ -27,6 +27,18 @@ yearsCounter - treeOfLifeTotalYears (tree_of_life_total_years)
 //дерева жизни
 
 2.
+mensahe - saveUserInput
+//переменная для сохранения ввода пользователя
+
+t - createServerThread
+//переменная для создания потока на сервере
+
+cls - clientSockets
+//переменная для хранения сокетов 
+
+xml - xmlFileForProcessing
+//переменная в которой хранится ссылка на 
+//файл, который будет в будущем обрабатываться
 
 3.
 class Vehicle(object):
