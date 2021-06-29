@@ -36,7 +36,34 @@ endOfProcessingFile - is_file_processing_complete
 //окончания обработки файла
 
 7.2
+def handlingFiles(fileNumber1, fileNumber2):
+    sumNumbers = 0
+    success = False
 
+    filePath1 = str(fileNumber1) + '.txt'
+    filePath2 = str(fileNumber2) + '.txt'
+   
+    if cf(filePath1) and cf(filePath2):
+        f1 = open(filePath1)
+        f2 = open(filePath2)
+
+        for s in f1:
+            sumNumbers += int(s.rstrip())
+        f1.close()
+        
+        for s in f2:
+            sumNumbers += int(s.rstrip())
+        f2.close()
+        success = True
+        
+        return sumNumbers, success
+    else:
+        return success
+      
+//функция для обработки записи в файл
+//по результату возвращается переменная success
+//она будет либо True, если все прошло успешно
+//либо False
 
 7.3
 for x in range(len(lengthString)):
