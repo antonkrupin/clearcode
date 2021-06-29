@@ -23,3 +23,78 @@ foundedNumber - is_number_found
 //однозначное значение true или false
 //из названия больше то, что в нем 
 //хранится найденное число
+
+
+formDosentExist - is_form_found
+//переменная из кода на JS
+//предназначена для определения
+//найдена ли на странице форма
+
+
+endOfProcessingFile - is_file_processing_complete
+//переменная для фиксирования
+//окончания обработки файла
+
+7.2
+
+7.3
+for x in range(len(lengthString)):
+  if(lengthString[x] != '.' and lengthString[x] != '0'):
+      formatedString = formatedString + lengthString[x]
+      
+//вместо x, мне кажется можно использовать string_char
+//будет более понятно значение чего сраниваем и проверяем
+
+for string_char in range(len(lengthString)):
+  if(lengthString[string_char] != '.' and lengthString[string_char] != '0'):
+      formatedString = formatedString + lengthString[string_char]
+
+7.4
+hover/unhover
+//переменная из JS 
+//для отслеживания наведения курсора
+//на элемента
+
+while(pointer <= len(string)):
+  m = string[pointer:pointer+length]
+  n = string[pointer:pointer+length+1]
+  if(' ' in m):
+      if(n[-1] == ' '):
+          splitString.append(m)
+          pointer = pointer + length
+      if(n[-1] != ' '):
+          for i in reversed(range(len(m))):
+              if(m[i] == ' '):
+                  splitString.append(m[:i])
+                  pointer = pointer + i + 1
+                  break
+
+  if(not ' ' in m):
+      splitString.append(m)
+      pointer = pointer + length
+      
+//заменить переменные m,n на start/finish
+//для более четкого понимания что в них находится
+
+while(pointer <= len(string)):
+  start = string[pointer:pointer+length]
+  finish = string[pointer:pointer+length+1]
+  if(' ' in start):
+      if(finish[-1] == ' '):
+          splitString.append(start)
+          pointer = pointer + length
+      if(finish[-1] != ' '):
+          for i in reversed(range(len(start))):
+              if(start[i] == ' '):
+                  splitString.append(start[:i])
+                  pointer = pointer + i + 1
+                  break
+
+  if(not ' ' in start):
+      splitString.append(start)
+      pointer = pointer + length
+
+
+7.5
+
+
