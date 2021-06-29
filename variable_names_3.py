@@ -37,6 +37,7 @@ endOfProcessingFile - is_file_processing_complete
 
 7.2
 
+
 7.3
 for x in range(len(lengthString)):
   if(lengthString[x] != '.' and lengthString[x] != '0'):
@@ -97,4 +98,15 @@ while(pointer <= len(string)):
 
 7.5
 
+//функция из JS для рендера картинок внутри блока
+
+rectangle_render = function(amount, rectangle, rectangleWidth, rectangleHeight) {
+  let coords_from_left = 0;
+  let coords_from_top = 0;
+  
+  //изначально переменные назывались x,y соответственно
+  //в коде они терялись, было трудно их найти
+  //так как взгляд проскакивал мимо них (из за очень короткого названия)
+  //и сразу было не понятно что в них может храниться
+}
 
