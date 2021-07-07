@@ -7,16 +7,20 @@ def MaximumDiscount(quantityOfGoods, prices):
 //решил использовать спецификатор NUM из 
 //пункта 6, решил, что это будет более понятно
 //чем использовать quantityOfGoods
+//на самом деле раньше я думал, что
+//NUM это сокращение от number,
+//те просто обозначение какого то числа единичного
+//например firstNum - обозначает первое число 
 
 def MaximumDiscount(numOfGoods, prices):
-    if(numOfGoods < 3):
+    if(num_of_goods < 3):
         return 0
-    if(numOfGoods == 3):
+    if(num_of_goods == 3):
         return min(prices)
     
 2.
 def PrintingCosts(string):
-    costSum = 0
+    cost_sum = 0
     string = string.strip().replace(' ', '')
     symbolsCost = {
         ' ':0,'&':24,',':7,'2':22,'8':23,'>':10,'D':26,
@@ -35,11 +39,28 @@ def PrintingCosts(string):
     
     for x in range(len(string)):
         if(string[x] in symbolsCost):
-            costSum += symbolsCost[string[x]]
+            cost_sum += symbolsCost[string[x]]
         if(not string[x] in symbolsCost):
-            costSum += 23
+            cost_sum += 23
     
-    return costSum
+    return cost_sum
 
 //согласно пункту 6 
-//переименовал переменную sumCost в costSum
+//переименовал переменную sumCost в cost_sum
+3.
+def findSecondMaxNumber(numbers):
+    numbers.sort()
+    if numbers != []:
+        first_max_number = numbers[-1]
+        second_max_number = numbers[0]
+        
+        if len(numbers) != 1:
+            if numbers[0] < first_max_number:
+                second_max_number = numbers[0]
+            numbers.pop(0)
+            print(first_max_number,second_max_number)
+            return findSecondMaxNumber(numbers)
+//переименовал переменные max1, max2 
+//в переменные first_max_number, second_max_number
+//потому что они не соответстовали нескольким правилам
+//были короткими, содержали цифры в названии, были не очень понятны
